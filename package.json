@@ -1,0 +1,36 @@
+{
+  "name": "typescript-sdk-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["/dist"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "clean": "tsc --build --clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Commondev73/TypeScript-sdk-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Commondev73/TypeScript-sdk-test/issues"
+  },
+  "homepage": "https://github.com/Commondev73/TypeScript-sdk-test#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.186",
+    "@types/randomstring": "^1.1.8",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mongoose": "^6.6.5",
+    "mongoose-paginate-v2": "^1.7.1",
+    "randomstring": "^1.2.2"
+  }
+}

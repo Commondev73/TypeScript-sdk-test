@@ -3,7 +3,7 @@ export interface IUser {
   password: string
   firstName: string
   lastName: string
-  status: number
+  status?: number
   photo?: string
 }
 

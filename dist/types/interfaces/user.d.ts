@@ -11,3 +11,4 @@ export declare enum EStatusUser {
     ACTIVE = 1,
     BANNED = 99
 }
+//# sourceMappingURL=user.d.ts.map

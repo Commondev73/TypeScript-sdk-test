@@ -35,10 +35,10 @@ const create = async (data: IUser) => {
 const update = async (id: string, data: IUser) => {
   try {
     const query = { _id: id }
-    const comment = await User.findOne(query)
+    const comment: IUserDoc | null = await User.findOne(query)
     if (comment && comment._id) {
       mapValues(data, (value, key) => {
-        comment[key] = value
+        if (value) comment[key] = value
       })
       return await comment.save()
     }

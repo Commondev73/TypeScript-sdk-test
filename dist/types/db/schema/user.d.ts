@@ -5,4 +5,3 @@ export interface IUserDoc extends IUser, Document {
 }
 declare const User: PaginateModel<IUserDoc, {}, {}>;
 export default User;
-//# sourceMappingURL=user.d.ts.map

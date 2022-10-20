@@ -45,4 +45,3 @@ declare const findById: (id: string) => Promise<(IUserDoc & {
     _id: import("mongoose").Types.ObjectId;
 }) | null>;
 export { getList, create, update, remove, aggregate, find, findOne, findById };
-//# sourceMappingURL=User.d.ts.map

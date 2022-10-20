@@ -23,8 +23,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Interface = exports.Constants = exports.Utils = exports.DB = void 0;
+exports.Interfaces = exports.Constants = exports.Utils = exports.DB = void 0;
 exports.DB = __importStar(require("./db"));
 exports.Utils = __importStar(require("./utils"));
 exports.Constants = __importStar(require("./constants"));
-exports.Interface = __importStar(require("./interfaces"));
+exports.Interfaces = __importStar(require("./interfaces"));

@@ -6,4 +6,3 @@ declare const RemoveFieldsFromPopulate: {
 };
 declare const getStatusDescription: (status: EStatusUser) => "inactive" | "active" | "banned" | "-";
 export { RemoveFieldsFromPopulate, getStatusDescription };
-//# sourceMappingURL=User.d.ts.map

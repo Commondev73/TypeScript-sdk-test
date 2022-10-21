@@ -32,7 +32,7 @@ const create = async (data: IUser) => {
   }
 }
 
-const update = async (id: string, data: IUser) => {
+const update = async (id: string, data: { [K in keyof IUser]?: IUser[K] }) => {
   try {
     const query = { _id: id }
     const comment: IUserDoc | null = await User.findOne(query)

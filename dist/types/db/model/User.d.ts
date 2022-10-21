@@ -32,7 +32,14 @@ declare const getList: (query?: FilterQuery<IUserDoc>, page?: number, limit?: nu
 declare const create: (data: IUser) => Promise<(IUserDoc & {
     _id: import("mongoose").Types.ObjectId;
 }) | null>;
-declare const update: (id: string, data: IUser) => Promise<IUserDoc | null>;
+declare const update: (id: string, data: {
+    userName?: string | undefined;
+    password?: string | undefined;
+    firstName?: string | undefined;
+    lastName?: string | undefined;
+    status?: number | undefined;
+    photo?: string | undefined;
+}) => Promise<IUserDoc | null>;
 declare const remove: (id: string) => Promise<import("mongodb").DeleteResult | null>;
 declare const aggregate: (stage: any) => Promise<any[]>;
 declare const find: (query: FilterQuery<IUser>) => Promise<(IUserDoc & {
